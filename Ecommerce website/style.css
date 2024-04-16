@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+}
+
+.content-wrapper {
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    color: #5c67f2;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+#homehero {
+    background-image: url('EcommercewebImages/HomePageImage.jpg');
+    background-size: 100% 100%;
+    height: 500px; 
+}
+
+main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main h2, main h3 {
+    color: #4a54e1;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+
+.subscription-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.subscription-box h2 {
+    color: #333;
+}
+
+.subscription-box p {
+    color: #666;
+}
+
+.subscription-box form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.subscription-box input[type="text"],
+.subscription-box input[type="email"] {
+    flex: 1;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscription-box button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-box button:hover {
+    background-color: #4a54e1;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+ .page-header {
+    font-size: 2.5em;
+    color: #4a54e1;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.back-pain-text {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    margin-top: 20px;
+}
+
+details {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    padding-left: 20px;
+}
+
+details[open] p {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-image {
+    max-width: 40%;
+    height: auto;
+}
+
+.product-details {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.product-details h2 {
+    margin-top: 0;
+}
+
+.order-section {
+    margin-top: 20px;
+}
+
+.order-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+}
+
+.price-tag {
+    font-size: 20px;
+    color: #4a54e1;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    details {
+        padding: 8px;
+    }
+    
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    header h1 a {
+        margin-top: 0;
+    }
+   .header-logo {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+   nav {
+        text-align: left;
+        padding: 5px 0;
+        background-color: #333;
+    }
+    
+   nav ul {
+	padding: 0;
+	margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px;
+    }
+
+    #homehero {
+        height: 300px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    
+     nav ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .content-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.back-pain-text {
+    margin: 10px 0;
+}
+
+ main {
+        padding: 15px;
+    }
+
+    main h2, main h3 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
+
+  
+   .subscription-box {
+        width: 90%;
+    }
+
+    .subscription-box input[type="text"],
+    .subscription-box input[type="email"] {
+        width: 80%;
+    }
+
+   details[open] p {
+        padding: 8px;
+        border-top: 1px solid #ccc;
+        margin-top: 3px;
+    }
+
+   .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image, .product-details {
+        max-width: 100%;
+    }
+
+    .product-details {
+        order: 1;
+        padding: 15px;
+    }
+
+    .order-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-button, select {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .price-tag {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .content-wrapper {
+        padding: 5px;
+    }
+    
+    details {
+        padding: 5px;
+    }
+
+    summary {
+        font-size: 14px;
+     }
+
+    .header-content {
+        flex-direction: column; 
+    }
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav {
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    nav ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #homehero {
+        height: 200px;
+    }
+
+   .content-section {
+        padding: 0 5px;
+    }
+
+    .page-header {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .back-pain-text {
+        max-width: 90%;
+    }
+
+main h2, main h3 {
+        font-size: 1.3em;
+    }
+
+    main p {
+        font-size: 0.85em;
+    }
+
+       .subscription-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .subscription-box input[type="text"],
+    .subscription-box input[type="email"] {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .subscription-box button {
+        padding: 8px 16px;
+    }
+
+    .details[open] p {
+        padding: 5px;
+        border-top: 1px solid #ccc;
+        margin-top: 2px;
+    }
+
+     .product-details, .product-image {
+        padding: 10px;
+    }
+
+     .order-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .price-tag {
+        font-size: 16px;
+    }
+
+}
